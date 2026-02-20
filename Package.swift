@@ -7,7 +7,8 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "HiddenToggle",
-            path: "Sources/HiddenToggle"
+            path: "Sources/HiddenToggle",
+            resources: [.copy("Resources")]
         )
     ]
 )
