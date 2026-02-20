@@ -20,6 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Hide dock icon
         NSApp.setActivationPolicy(.accessory)
 
+        // Check for updates
+        UpdateChecker.shared.checkForUpdates()
+
         // Check current state
         isShowingHidden = currentFinderState()
 
